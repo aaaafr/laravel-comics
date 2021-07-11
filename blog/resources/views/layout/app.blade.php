@@ -9,7 +9,10 @@
         <!-- Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="crossorigin="anonymous" />
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        
 
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <!-- Styles -->
@@ -29,7 +32,7 @@
     <div class="container">
         <div class="menu">
         <div class="logo">
-         <img src="" alt="">
+         <img src="{{asset('images/dc-logo.png')}}" alt="">
          </div>
          <div class="nav">
          <a href="{{ route('characters') }}">CHARACTERS</a>
@@ -49,12 +52,46 @@
         </div>
     </div>
     </div>
+    <div class="backhero">
+    
+    </div>
     </header>
     <main id="main_content">
        @yield('content')
     </main>
     <footer id="site_footer">
-    Footer Content
+    <div class="bg_blue">
+    <div class="container">
+    <div class="footer_menu">
+    <div class="digital">
+    <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="">
+    <p>DIGITAL COMICS</p>
+    </div>
+    <div class="merchandise">
+    <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="">
+    <p>DC MERCHANDISE</p>
+    </div>
+    <div class="subscription">
+    <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="">
+    <p>SUBSCRIPTION</p>
+    </div>
+    <div class="loc">
+    <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="">
+    <p>COMIC SHOP LOCATOR</p>
+    </div>
+    <div class="visa">
+    <img src="{{asset('images/buy-dc-power-visa.svg')}}" alt="">
+    <p>DC POWER VISA</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="dc_back">
+    <div class="container">
+    <div class="colonne">
+    </div>
+    </div>
+    </div>
     </footer>
     </body>
 </html>
